@@ -1,0 +1,20 @@
+package com.martins.produtoservice.model;
+
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Document(value = "produto") 
+@NoArgsConstructor
+@Builder
+@Data
+public class Produto {
+	@Id
+	private String id;
+	private String nome;
+	private String descricao;
+	private BigDecimal preco;
+}

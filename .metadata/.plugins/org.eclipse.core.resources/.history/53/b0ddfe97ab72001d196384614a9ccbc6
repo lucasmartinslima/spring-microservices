@@ -1,0 +1,5 @@
+package com.martins.produtoservice.repository;
+
+public interface ProdutoRepository {
+
+}

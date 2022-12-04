@@ -1,0 +1,30 @@
+package com.martins.produtoservice.service;
+
+import org.springframework.stereotype.Service;
+
+import com.martins.produtoservice.dto.ProdutoRequest;
+import com.martins.produtoservice.model.Produto;
+import com.martins.produtoservice.repository.ProdutoRepository;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j; 
+
+@Service
+@RequiredArgsConstructor
+@Slf4j
+public class ProdutoService {
+	 
+	private final ProdutoRepository produtoRepository;
+	
+	public void criarProduto(ProdutoRequest produtoRequest) {
+		Produto produto = Produto.builder()
+				.nome(produtoRequest.getNome())
+				.descricao(produtoRequest.getDescricao())
+				.preco(produtoRequest.getPreco())
+				.build();
+		
+		produtoRepository.save(produto);
+		log.info("Produto salvo Id:{}, Nome:{}, Preço:{}, Descrição:{}"
+				,produto.getId(), produto.getNome(), produto.getPreco(), produto.getDescricao());
+	}
+}

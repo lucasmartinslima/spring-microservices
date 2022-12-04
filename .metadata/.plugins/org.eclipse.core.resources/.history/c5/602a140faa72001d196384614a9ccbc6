@@ -1,0 +1,1 @@
+spring.data.mongodb.url://localhost:27017/produto-service

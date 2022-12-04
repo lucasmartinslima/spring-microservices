@@ -1,0 +1,5 @@
+package com.martins.produtoservice.model;
+
+public class Produto {
+
+}
