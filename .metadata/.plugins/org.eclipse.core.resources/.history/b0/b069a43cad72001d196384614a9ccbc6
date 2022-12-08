@@ -1,5 +1,0 @@
-package com.martins.produtoservice.dto;
-
-public class ProdutoRequest {
-
-}

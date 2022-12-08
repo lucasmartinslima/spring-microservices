@@ -1,5 +1,0 @@
-package com.martins.produtoservice.repository;
-
-public class ProdutoRepository {
-
-}
