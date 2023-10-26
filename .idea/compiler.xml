@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-gateway" />
+        <module name="produto-service" />
+        <module name="discovery-server" />
+        <module name="inventario-service" />
+        <module name="notification-service" />
+        <module name="compra-service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-gateway" options="-parameters" />
+      <module name="compra-service" options="-parameters" />
+      <module name="discovery-server" options="-parameters" />
+      <module name="inventario-service" options="-parameters" />
+      <module name="notification-service" options="-parameters" />
+      <module name="produto-service" options="-parameters" />
+    </option>
+  </component>
+</project>
